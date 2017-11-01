@@ -1,0 +1,68 @@
+﻿@model FortuneTellerMvC.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthMonth)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BirthMonth)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FavoriteColor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FavoriteColor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NumberOfSiblings)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfSiblings)
+        </dd>
+
+    </dl>
+    <p>You will retire in <span>@ViewBag.RetirementAge</span> years.</p>
+    <p>You will get places via a <span>@ViewBag.Vehicle</span></p>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.CustomersID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
